@@ -4,7 +4,9 @@
   "engines": {
     "node": "0.6.x"
   },
-  "now": {},
+  "now": {
+    "dotenv": "variable.env.now"
+  },
   "dependencies": {
     "express": "^3.0.0",
     "mocha": "^1.6.0",
@@ -13,6 +15,6 @@
   },
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha",
-    "start": "app.js"
+    "start": "node index.js"
   }
 }
